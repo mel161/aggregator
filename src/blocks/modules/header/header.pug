@@ -1,0 +1,29 @@
+include ../../../views/helpers/mixins
+
+header.header
+  .container
+    .row.align-items-start 
+      .col One of three columns
+      .col One of three columns
+      .col Русский текст
+    .row
+      .col
+        button.btn.btn--primary Подробнее
+      .col 
+        button.btn.btn--primary
+          .icon-text
+            .icon-text__icon
+              +icon('priority', 24, 24)
+            .icon-text__text Реклама
+      .col 
+        button.btn.btn--clear
+          +icon('search', 24, 24)
+      .col 
+        button.btn.btn--border-primary
+          .icon-text
+            .icon-text__icon
+              +icon('menu', 24, 24)
+            .icon-text__text Каталог объявлений
+      .col 
+        button.btn.btn--border-grey.btn--medium.btn--square
+          +icon('close', 32, 32)

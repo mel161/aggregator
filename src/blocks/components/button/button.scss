@@ -1,0 +1,90 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  font-weight: 600;
+
+  &--base {
+    min-height: 48px;
+  }
+
+  &--medium {
+    min-height: 40px;
+  }
+
+  &--small {
+    min-height: 35px;
+  }
+
+  &--square {
+    // display: block;
+    padding: 3px;
+    // @include aspect-ratio(1, 1);
+    // & > * {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   left: 0;
+    // }
+  }
+
+  &--primary {
+    background-color: $yellow;
+    color: $black;
+
+    @include hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  &--clear {
+    background-color: transparent;
+    color: $black;
+
+    @include hover {
+      background-color: $yellow;
+    }
+  }
+
+  &--border-primary {
+    border: 2px solid $yellow;
+    background-color: transparent;
+    color: $black;
+
+    @include hover {
+      background-color: $yellow;
+    }
+  }
+  &--border-grey {
+    border: 0.8px solid rgba($color: $black, $alpha: 0.5);
+    border-radius: 7px;
+    background-color: transparent;
+    color: $black;
+    
+    @include hover {
+      border-color: $yellow;
+      background-color: $yellow;
+      & .icon {
+        opacity: 1;
+      }
+    }
+
+    & .icon {
+      opacity: 0.8;
+    }
+  }
+}

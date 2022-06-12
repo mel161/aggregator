@@ -1,0 +1,16 @@
+.icon-text {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        flex: none;
+    }
+
+    &__icon + &__text {
+        margin-left: 16px;
+    }
+
+    &__text + &__icon {
+        margin-left: 16px;
+    }
+}
